@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    
+</head>
+<body style="background-color: #1d1f3e;">
+    <div style="margin-top:200px;color:white;font-size: 60px;font-family: Verdana, Geneva, Tahoma, sans-serif;text-align: center;padding-top:100px;">
+        
+        {% if output %}
+            <h3> Attack Class should be <b style="color:red;">{{ output }}</b>  </h3>
+        {% endif %}
+    </div>
+   
+    
+</body>
+</html>
