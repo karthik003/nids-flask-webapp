@@ -1,44 +1,5 @@
 # Network-Intrusion-Detection-System
 
-## Table of Content
-  * [Directory Tree](#directory-tree)
-  * [BUSINESS CONTEXT](#business-context)
-  * [BUSINESS PROBLEM](#business-problem)
-  * [DATA AVAILABILITY](#data-availability)
-  * [ATTACK CLASS](#attack-class)
-  * [How to Use](#how-to-use)
-  * [LICENSE](#license)
-
-### Directory Tree
-
-```
-├── NSL_Dataset
-│   ├── Test.txt
-│   ├── Train.txt
-├── results
-│   ├── 2020-06-15 15_28_16-Window.png
-│   ├── 2020-06-15 15_29_02-Window.png
-│   ├── 2020-06-15 15_30_02-Window.png
-│   ├── 2020-06-15 15_31_30-Window.png
-│   ├── 2020-06-15 15_31_58-Window.png
-│   ├── 2020-06-15 15_32_25-Window.png
-├── static
-│   ├── style.css
-├── templates
-│   ├── index.html
-├── app.py
-├── corrm.csv
-├── Dockerfile
-├── model.pkl
-├── Network Intrusion Detection System.ipynb
-├── num_summary.csv
-├── pandas_profiling.html
-├── requirements.txt
-├── LICENSE
-├── Procfile
-├── README.md
-```
-
 ### BUSINESS CONTEXT:
 
 With the enormous growth of computer networks usage and the huge increase in the number of applications running on top of it, network secrity is becoming increasingly more important. All the computer systems suffer from security vulnerabilities which are both technically difficult and economically costly to be solved by the manufacturers. Therefore, the role of Intrusion Detection Systems (IDSs), as special purpose devices to detect anomalies and attacks in the network, is becoming more important. 
@@ -143,44 +104,3 @@ For more about data: http://www.unb.ca/cic/datasets/nsl.html
 2. <b>Probing:</b> Surveillance and other probing attack‟s objective is to gain information about the remote victim e.g. port scanning. Relevant features: “duration of connection” and “source bytes”  
 3. <b>U2R:</b> unauthorized access to local super user (root) privileges is an attack type, by which an attacker uses a normal account to login into a victim system and tries to gain root/administrator privileges by exploiting some vulnerability in the victim e.g. buffer overflow attacks. Relevant features: “number of file creations” and “number of shell prompts invoked,” 
 4. <b>R2L:</b> unauthorized access from a remote machine, the attacker intrudes into a remote machine and gains local access of the victim machine. E.g. password guessing Relevant features: Network level features – “duration of connection” and “service requested” and host level features - “number of failed login attempts” 
-
-### How to Use
-
-Just follow 3 simple steps :
-
-1. Go to project website link https://nids-api.herokuapp.com/ .<br>
-
-2. Fill the form as shown below :<br><br>
-
-![](https://github.com/vicky60629/Network-Intrusion-Detection-System/blob/master/results/2020-06-15%2015_28_16-Window.png)<br>
-![](https://github.com/vicky60629/Network-Intrusion-Detection-System/blob/master/results/2020-06-15%2015_29_02-Window.png)<br>
-
-3. Then Click on Predict and you get the predicted attack class .<br><br>
-
-![](https://github.com/vicky60629/Network-Intrusion-Detection-System/blob/master/results/2020-06-15%2015_30_02-Window.png)<br>
-
-**If you face any problem :** email me at *vg60629@gmail.com*
-
-### LICENSE
-
-[MIT License](https://github.com/vicky60629/Network-Intrusion-Detection-System/blob/master/LICENSE)
-
-Copyright (c) 2020 Vicky Gupta
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
